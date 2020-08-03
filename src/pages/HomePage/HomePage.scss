@@ -1,0 +1,80 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+@import "../../styles/partials/resets";
+
+.nav {
+    height: 8.5vh;
+    position: fixed;
+    width: 100%;
+    font-family: "RobotoMedium";
+    z-index: 5;
+    transition: 1s background-color ease-in;
+    border-bottom: 1px solid black;
+    &--active {
+        background-color: $navy-blue;
+    }
+    &__container {
+        height: 100%; 
+        transition: 1s border-bottom ease-in;
+        border-bottom: 0.2rem solid transparent;
+        &--active {
+            border-bottom: 0.2rem solid $primary-dark;
+        }
+    }
+    &__list {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list-item {
+        &--container{
+            display: flex;
+        }
+        list-style: none;
+        padding: 0 4rem;
+        display: flex;
+        &--logo {
+            margin-right: auto;
+        }
+        &--burger {
+            cursor: pointer;
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $off-black;
+        font-size: 1.5rem;
+        letter-spacing: 0.25rem;
+        transition: color 1s ease in;
+        &--active {
+            color: $off-white
+        }
+    }
+}
+
+
+@include mobile{
+    .nav {
+        &--active {
+            background-color: transparent;
+        }
+        &__container {
+            &--active {
+                border-bottom: 0.1rem solid transparent;
+            }
+        }
+        &__list-item {
+            display: none;
+            &--burger {
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+}
