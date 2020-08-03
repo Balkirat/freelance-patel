@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./HomePage.scss";
-import Header from "../../components/Header/Header"
+import Header from "../../components/Header/Header";
+import MobileNav from "../../components/MobileNav/MobileNav"
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ export default class HomePage extends Component {
           showBackgroundColor={this.state.showBackgroundColor}
           toggleNav={this.toggleNav}
         />
-        {/* <SideNav isNavOpen={this.state.isNavOpen} toggleNav={this.toggleNav} /> */}
+        <MobileNav isNavOpen={this.state.mobileNavOpen} toggleNav={this.toggleNav} />
       </div>
     );
   }

@@ -1,0 +1,44 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+@import "../../styles/partials/resets";
+
+.sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: $navy-blue;
+  height: 100%;
+  z-index: 5;
+  font-family: "RobotoBold";
+  &__list {
+    list-style: none;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  &__list-item {
+    margin-bottom: 6rem;
+  }
+  &__link {
+    font-size: 2.75rem;
+    text-decoration: none;
+    color: $off-white;
+    border-bottom: 0.2rem solid transparent;
+    transition: 0 0.3s ease border;
+  }
+
+  &__close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

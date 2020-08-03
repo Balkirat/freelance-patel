@@ -12,8 +12,7 @@ const Header = (props) => {
             props.showBackgroundColor && "nav__container--active"
           }`}
         >
-          <ul className="nav__list">
-            <div>
+          <ul className="nav__list">      
               <li className="nav__list-item nav__list-item--logo">
                 <Link
                   className={`nav__link ${
@@ -28,8 +27,6 @@ const Header = (props) => {
                   Patel Optical
                 </Link>
               </li>
-            </div>
-            <div className="nav__list-item--container">
               <li className="nav__list-item">
                 <Link
                   className={`nav__link ${
@@ -41,7 +38,7 @@ const Header = (props) => {
                   offset={0}
                   duration={500}
                 >
-                  Servces
+                  Services
                 </Link>
               </li>
               <li className="nav__list-item">
@@ -79,7 +76,6 @@ const Header = (props) => {
               >
                 <img src={hamburgerButton} alt="hamburger" />
               </li>
-            </div>
           </ul>
         </div>
       </nav>
