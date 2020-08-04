@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./services.scss";
-import { motion } from "framer-motion";
 import sunglasses from "../../assets/images/sunglasses.jpg";
 import eyeExams from "../../assets/images/eyeExams.jpg";
 import designerGlasses from "../../assets/images/designer-glasses.jpg";

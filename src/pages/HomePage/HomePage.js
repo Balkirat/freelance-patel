@@ -22,7 +22,7 @@ export default class HomePage extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 550) {
+      if (window.scrollY > 250) {
         this.setState({
           showBackgroundColor: true,
         });

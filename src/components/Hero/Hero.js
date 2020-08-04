@@ -3,13 +3,16 @@ import "./Hero.scss";
 import backgroundImage from "../../assets/images/heroImg.jpg";
 import { motion } from "framer-motion";
 
+
+
 const Hero = (props) => {
+  console.log(props.showBackgroundColor)
   return (
     <div className="hero">
       <div className="hero__container">
-        <img className="hero__background" src={backgroundImage}></img>
+        <img className="hero__background" src={backgroundImage} alt="background"></img>
         <motion.div
-          className="hero__info"
+          className={`hero__info ${props.showBackgroundColor && "hero__info--opacity"}`}
           initial={{ x: "-10vw", opacity: 0 }}
           animate={{ x: "20%", opacity: 1 }}
           transition={{

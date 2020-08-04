@@ -27,10 +27,7 @@ const variants = {
 
 
 const MobileNav = (props) => {
-
   const { isNavOpen, toggleNav } = props;
-  console.log(isNavOpen)
-  console.log(toggleNav)
   return (
     <>
       <motion.nav
@@ -41,7 +38,7 @@ const MobileNav = (props) => {
         transition={{ damping: 900 }}
       >
         <button onClick={toggleNav} className="sideNav__close-btn">
-          <img src={closeBtn} />
+          <img src={closeBtn} alt="close button" />
         </button>
         <motion.ul className="sideNav__list" variants={ulVariants}>
           <motion.li className="sideNav__list-item" variants={liVariants}>
