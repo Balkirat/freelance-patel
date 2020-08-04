@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./HomePage.scss";
 import Header from "../../components/Header/Header";
 import MobileNav from "../../components/MobileNav/MobileNav"
+import Hero from "../../components/Hero/Hero";
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ export default class HomePage extends Component {
           toggleNav={this.toggleNav}
         />
         <MobileNav isNavOpen={this.state.mobileNavOpen} toggleNav={this.toggleNav} />
+        <Hero />
       </div>
     );
   }
