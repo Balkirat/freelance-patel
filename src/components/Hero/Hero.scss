@@ -17,7 +17,7 @@
     &__info{
         position: absolute;
         top: 25%;
-        left: 15%;
+    //    left: 15%;
         color: white;
         z-index: 1;
         
@@ -26,6 +26,7 @@
             font-family: "PoppinsBold";
             margin-bottom: 1rem;
             letter-spacing: 0.4rem;
+            line-height: 8.5rem;
             & span{
                 color: $primary;
                 &::before{
@@ -39,6 +40,7 @@
             font-family: "PoppinsBold";
             font-size: 28px;
             letter-spacing: 0.2rem;
+            margin-left: .5rem;
         }
 
     }
