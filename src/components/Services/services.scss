@@ -1,0 +1,23 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+@import "../../styles/partials/resets";
+
+.products {
+  background-color: $light;
+  padding: 5rem 0;
+  &__container {
+    width: 75%;
+    margin: auto;
+  }
+  &__heading {
+    font-size: 5rem;
+    padding: 3rem 0;
+  }
+  &__cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

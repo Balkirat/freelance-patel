@@ -3,7 +3,7 @@ import "./Hero.scss";
 import backgroundImage from "../../assets/images/heroImg.jpg";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <div className="hero">
       <div className="hero__container">
